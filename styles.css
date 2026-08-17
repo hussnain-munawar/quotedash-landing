@@ -345,55 +345,7 @@ button { font: inherit; }
   margin-top: var(--space-md);
 }
 
-/* CSS-only tabs: radios drive panel visibility with zero JS required;
-   an optional script (below) layers auto-advance on top. */
 .dispatch { max-width: 460px; }
-.dispatch__radio {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.dispatch__tabs {
-  display: flex;
-  gap: 2px;
-  margin-bottom: -1.5px;
-  position: relative;
-  z-index: 1;
-}
-.dispatch__tab {
-  flex: 1;
-  text-align: center;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: color-mix(in srgb, var(--paper) 55%, transparent);
-  background: color-mix(in srgb, var(--ticket-dark) 60%, var(--graphite-deep));
-  border: 1.5px solid var(--steel-border);
-  border-bottom: none;
-  padding: var(--space-md) var(--space-sm);
-  cursor: pointer;
-  user-select: none;
-  transition: background 120ms ease, color 120ms ease;
-}
-#tab-spoken:focus-visible ~ .dispatch__tabs label[for="tab-spoken"],
-#tab-structured:focus-visible ~ .dispatch__tabs label[for="tab-structured"],
-#tab-sent:focus-visible ~ .dispatch__tabs label[for="tab-sent"] {
-  outline: 3px solid var(--signal-green-light);
-  outline-offset: -3px;
-}
-.dispatch__tab:hover { color: var(--paper); }
-#tab-spoken:checked ~ .dispatch__tabs label[for="tab-spoken"],
-#tab-structured:checked ~ .dispatch__tabs label[for="tab-structured"],
-#tab-sent:checked ~ .dispatch__tabs label[for="tab-sent"] {
-  background: var(--ticket-dark);
-  color: var(--safety-yellow);
-  border-color: var(--paper);
-}
 
 .dispatch__frame {
   display: flex;
@@ -427,11 +379,15 @@ button { font: inherit; }
   min-height: 220px;
   box-shadow: 0 18px 36px -12px rgba(0, 0, 0, 0.55);
 }
-.dispatch__panel { display: none; }
-#tab-spoken:checked ~ .dispatch__card .dispatch__panel--spoken,
-#tab-structured:checked ~ .dispatch__card .dispatch__panel--structured,
-#tab-sent:checked ~ .dispatch__card .dispatch__panel--sent {
+.dispatch__card--video {
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.dispatch__video {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .dispatch__id {
@@ -440,33 +396,6 @@ button { font: inherit; }
   letter-spacing: 0.05em;
   color: var(--steel-border);
   margin-bottom: var(--space-lg);
-}
-
-.dispatch__wave {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 40px;
-  margin-bottom: var(--space-lg);
-}
-.dispatch__wave span {
-  flex: 1;
-  background: var(--safety-yellow);
-  animation: wave 1.4s ease-in-out infinite;
-}
-.dispatch__wave span:nth-child(1) { height: 40%; animation-delay: 0s; }
-.dispatch__wave span:nth-child(2) { height: 70%; animation-delay: 0.1s; }
-.dispatch__wave span:nth-child(3) { height: 100%; animation-delay: 0.2s; }
-.dispatch__wave span:nth-child(4) { height: 55%; animation-delay: 0.3s; }
-.dispatch__wave span:nth-child(5) { height: 85%; animation-delay: 0.4s; }
-.dispatch__wave span:nth-child(6) { height: 35%; animation-delay: 0.5s; }
-.dispatch__wave span:nth-child(7) { height: 90%; animation-delay: 0.6s; }
-.dispatch__wave span:nth-child(8) { height: 50%; animation-delay: 0.7s; }
-.dispatch__wave span:nth-child(9) { height: 65%; animation-delay: 0.8s; }
-.dispatch__wave span:nth-child(10) { height: 30%; animation-delay: 0.9s; }
-@keyframes wave {
-  0%, 100% { transform: scaleY(0.55); }
-  50% { transform: scaleY(1); }
 }
 
 .dispatch__mono {
@@ -479,12 +408,6 @@ button { font: inherit; }
   color: var(--safety-yellow);
   font-size: 1rem;
 }
-.dispatch__caption {
-  font-size: 0.85rem;
-  color: color-mix(in srgb, var(--paper) 62%, transparent);
-  margin-top: var(--space-md);
-}
-
 .dispatch__ledger { font-family: var(--font-mono); font-size: 0.88rem; }
 .dispatch__row {
   display: grid;
@@ -501,11 +424,6 @@ button { font: inherit; }
   padding-top: var(--space-sm);
   font-weight: 700;
   color: var(--safety-yellow);
-}
-
-.dispatch__sent-icon {
-  color: var(--safety-yellow);
-  margin-bottom: var(--space-md);
 }
 
 /* ---------- Feature strip ---------- */
