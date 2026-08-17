@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuoteDash AI — Join the waitlist</title>
+<meta name="description" content="QuoteDash AI turns a spoken walkthrough into a professional PDF quote — even with no signal. Join the waitlist to be first in line at launch.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#waitlist-form">Skip to waitlist form</a>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <div class="wordmark" aria-label="QuoteDash AI">
+      <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+    </div>
+    <a class="btn btn--small" href="#waitlist-form">Join the waitlist</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">PRE&#8209;LAUNCH WAITLIST &middot; ANDROID</p>
+        <h1 class="hero__headline">Quote the job.<br>No bars required.</h1>
+        <p class="hero__subhead">QuoteDash AI turns a spoken walkthrough into a professional
+          PDF quote &mdash; even in the basement, the shed, or out where your phone drops to
+          zero bars. Speak it, edit it, send it.</p>
+
+        <form id="waitlist-form" class="signup signup--hero mc-embedded-subscribe-form"
+              action="https://bytebuild.us5.list-manage.com/subscribe/post?u=7855b1c48146903b79a15d763&amp;id=484b8ecba6"
+              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate
+              data-success="#thanks">
+          <label class="sr-only" for="email">Email address</label>
+          <input class="signup__input" type="email" id="email" name="EMAIL"
+                 placeholder="you@yourbusiness.com" required autocomplete="email">
+          <!-- Mailchimp anti-bot honeypot: must stay hidden and empty, do not remove -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_7855b1c48146903b79a15d763_484b8ecba6" tabindex="-1" value="">
+          </div>
+          <button class="btn btn--primary signup__submit" type="submit" name="subscribe">Reserve my spot</button>
+        </form>
+        <p class="signup__trust">
+          <span class="signup__badge">&#9679; Private beta, Android</span>
+          One email, the day we go live. No spam, no drip campaign.
+        </p>
+
+        <div id="thanks" class="signup__success" role="status">
+          <strong>You&rsquo;re on the list.</strong> We&rsquo;ll email you the day we go live
+          &mdash; and yes, we&rsquo;ll remember you said yes first.
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__ticket">
+          <div class="dispatch__frame">
+            <span class="dispatch__frame-dot"></span>
+            <span class="dispatch__frame-dot"></span>
+            <span class="dispatch__frame-dot"></span>
+            <span class="dispatch__frame-label">QUOTEDASH AI &middot; ANDROID</span>
+          </div>
+          <div class="dispatch__card hero__ticket-card">
+            <p class="dispatch__id">QUOTE #1042 &middot; PDF IN &lt;60s</p>
+            <div class="dispatch__ledger">
+              <div class="dispatch__row"><span>Drywall patch</span><span>1&nbsp;ea</span><span>$22.00</span></div>
+              <div class="dispatch__row"><span>Labor</span><span>2&nbsp;hr</span><span>$130.00</span></div>
+              <div class="dispatch__row dispatch__row--total"><span>Total</span><span></span><span>$152.00</span></div>
+            </div>
+            <p class="dispatch__mono dispatch__mono--ready">PDF READY &middot; SMS / EMAIL / WHATSAPP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tear tear--paper-to-dark" aria-hidden="true"></div>
+
+  <!-- ============ SHOP FLOOR: signature interactive dispatch ticket ============ -->
+  <section class="shop-floor">
+    <div class="wrap shop-floor__inner">
+      <div class="shop-floor__head">
+        <p class="eyebrow eyebrow--light">HOW A QUOTE MOVES THROUGH THE APP</p>
+        <h2 class="section-title">Spoken to sent, before you leave the driveway.</h2>
+        <p class="shop-floor__lede">Three stations, one ticket. Tap through, or let it run.</p>
+      </div>
+
+      <!--
+        Interactive CSS mockup below stands in for the real 15s screen-recorded
+        demo described in docs/LANDING_PAGE_BRIEF.md §4.1 (record an actual
+        record -> transcribe -> PDF flow on-device, e.g. via
+        `adb shell screenrecord`, trim to a silent looping MP4/GIF). Once that
+        asset exists, swap this <div class="dispatch"> block for:
+          <video class="dispatch__video" src="assets/demo.mp4" poster="assets/demo-poster.jpg"
+                 autoplay loop muted playsinline></video>
+        Do not fake this with stock/AI-generated footage — the brief requires
+        every claim/demo on this page to be verifiably real.
+      -->
+      <div class="dispatch">
+        <input class="dispatch__radio" type="radio" name="dispatch" id="tab-spoken" checked>
+        <input class="dispatch__radio" type="radio" name="dispatch" id="tab-structured">
+        <input class="dispatch__radio" type="radio" name="dispatch" id="tab-sent">
+
+        <div class="dispatch__tabs">
+          <label class="dispatch__tab" for="tab-spoken">01 &middot; Spoken</label>
+          <label class="dispatch__tab" for="tab-structured">02 &middot; Structured</label>
+          <label class="dispatch__tab" for="tab-sent">03 &middot; Sent</label>
+        </div>
+
+        <div class="dispatch__frame" aria-hidden="true">
+          <span class="dispatch__frame-dot"></span>
+          <span class="dispatch__frame-dot"></span>
+          <span class="dispatch__frame-dot"></span>
+          <span class="dispatch__frame-label">QUOTEDASH AI &middot; ANDROID</span>
+        </div>
+        <div class="dispatch__card">
+          <p class="dispatch__id">QUOTE #1042 &middot; PDF IN &lt;60s</p>
+
+          <div class="dispatch__panel dispatch__panel--spoken">
+            <div class="dispatch__wave" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="dispatch__mono">&ldquo;Drywall patch, 2 hours labor at $65, one sheet of
+              drywall at $22&hellip;&rdquo;</p>
+            <p class="dispatch__caption">Recorded, then transcribed &mdash; a compressor
+              kicking in mid&#8209;sentence won&rsquo;t wreck the take.</p>
+          </div>
+
+          <div class="dispatch__panel dispatch__panel--structured">
+            <div class="dispatch__ledger">
+              <div class="dispatch__row"><span>Drywall patch</span><span>1&nbsp;ea</span><span>$22.00</span></div>
+              <div class="dispatch__row"><span>Labor</span><span>2&nbsp;hr</span><span>$130.00</span></div>
+              <div class="dispatch__row dispatch__row--total"><span>Total</span><span></span><span>$152.00</span></div>
+            </div>
+            <p class="dispatch__caption">Extracted into line items you review and edit &mdash;
+              nothing sends until you say so.</p>
+          </div>
+
+          <div class="dispatch__panel dispatch__panel--sent">
+            <svg class="dispatch__sent-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 3H20V16.2L18.5 14.7L17 16.2L15.5 14.7L14 16.2L12.5 14.7L11 16.2L9.5 14.7L8 16.2L6.5 14.7L5 16.2L4 14.7V3Z"
+                    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M7 7H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M7 9.8H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M7 12.6H12.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+            <p class="dispatch__mono dispatch__mono--ready">PDF READY &middot; SMS / EMAIL / WHATSAPP</p>
+            <p class="dispatch__caption">Generated on&#8209;device &mdash; no signal needed to
+              finish and hand it over.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tear tear--dark-to-paper" aria-hidden="true"></div>
+
+  <!-- ============ FEATURE STRIP ============ -->
+  <section class="features">
+    <div class="wrap">
+      <p class="eyebrow">THREE THINGS THAT MATTER ON A JOBSITE</p>
+      <h2 class="section-title">Built for the jobsite, not a boardroom</h2>
+      <ul class="feature-grid">
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="10" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M8 10V8C8 5.239 9.79 3 12 3C14.21 3 16 5.239 16 8V10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M7 12H17V15C17 17.761 14.866 20 12 20C9.134 20 7 17.761 7 15V12Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12C5 11.448 4.552 11 4 11C3.448 11 3 11.448 3 12V15C3 18.866 6.134 22 10 22H14C17.866 22 21 18.866 21 15V12C21 11.448 20.552 11 20 11C19.448 11 19 11.448 19 12V15C19 17.761 16.866 20 14 20H10C7.134 20 5 17.761 5 15V12Z" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+          <h3>Speak it, don&rsquo;t type it &mdash; even through the noise.</h3>
+          <p>Record-then-transcribe means a compressor or saw kicking in mid&#8209;sentence
+            doesn&rsquo;t wreck the quote the way live&#8209;dictation apps do.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 3H20V16.2L18.5 14.7L17 16.2L15.5 14.7L14 16.2L12.5 14.7L11 16.2L9.5 14.7L8 16.2L6.5 14.7L5 16.2L4 14.7V3Z"
+                  fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M7 7H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M7 9.8H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M7 12.6H12.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          <h3>No signal, no problem.</h3>
+          <p>PDF generation and quoting never depend on a network connection &mdash; finish
+            the job in a dead zone, send it the second you&rsquo;re back in range.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="10" cy="12" r="7.5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="10" cy="12" r="1.1" fill="currentColor"/>
+            <rect x="9.5" y="5.3" width="1" height="2" fill="currentColor"/>
+            <rect x="9.5" y="16.7" width="1" height="2" fill="currentColor"/>
+            <rect x="3.3" y="11.5" width="2" height="1" fill="currentColor"/>
+            <rect x="14.7" y="11.5" width="2" height="1" fill="currentColor"/>
+            <rect x="16.5" y="10.4" width="6.2" height="3.2" rx="0.6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            <rect x="17.4" y="11.15" width="4.4" height="0.6" fill="currentColor"/>
+            <rect x="17.4" y="12.25" width="2.8" height="0.6" fill="currentColor"/>
+          </svg>
+          <h3>Remembers your rates.</h3>
+          <p>Save your usual price for drywall, an outlet, a service call &mdash; next time
+            you say it, QuoteDash AI already knows what to charge.</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SECOND CTA ============ -->
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <div class="cta-band__copy">
+        <p class="eyebrow eyebrow--light">DON&rsquo;T MISS LAUNCH DAY</p>
+        <h2>Be first in line when we open up.</h2>
+        <p>QuoteDash AI is in private testing on Android right now. Join the waitlist and
+          we&rsquo;ll email you the moment it&rsquo;s live &mdash; nothing before that.</p>
+      </div>
+      <div class="cta-band__form">
+        <form class="signup signup--band mc-embedded-subscribe-form"
+              action="https://bytebuild.us5.list-manage.com/subscribe/post?u=7855b1c48146903b79a15d763&amp;id=484b8ecba6"
+              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate
+              data-success="#thanks-band">
+          <label class="sr-only" for="email-2">Email address</label>
+          <input class="signup__input" type="email" id="email-2" name="EMAIL"
+                 placeholder="you@yourbusiness.com" required autocomplete="email">
+          <!-- Mailchimp anti-bot honeypot: must stay hidden and empty, do not remove -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_7855b1c48146903b79a15d763_484b8ecba6" tabindex="-1" value="">
+          </div>
+          <button class="btn btn--primary signup__submit" type="submit" name="subscribe">Reserve my spot</button>
+        </form>
+        <p class="signup__trust">
+          <span class="signup__badge">&#9679; Private beta, Android</span>
+          Zero spam. Launch&#8209;day invite only.
+        </p>
+
+        <div id="thanks-band" class="signup__success" role="status">
+          <strong>You&rsquo;re on the list.</strong> We&rsquo;ll email you the day we go live
+          &mdash; and yes, we&rsquo;ll remember you said yes first.
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__row">
+    <div class="wordmark wordmark--footer" aria-label="QuoteDash AI">
+      <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+    </div>
+    <p class="site-footer__copy">QuoteDash AI is currently in private testing on Android.
+      Join the waitlist to be first in line when we open up.</p>
+  </div>
+</footer>
+
+
+<script>
+  // Progressive enhancement only: the dispatch ticket (#tab-spoken / -structured / -sent)
+  // is a native CSS-only radio tab group and is fully usable without this script.
+  // This just auto-advances it, pausing on hover/focus, and skips entirely if the
+  // visitor has requested reduced motion.
+  (function () {
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var dispatch = document.querySelector(".dispatch");
+    if (reduceMotion || !dispatch) return;
+
+    var radios = Array.prototype.slice.call(dispatch.querySelectorAll(".dispatch__radio"));
+    var timer = null;
+
+    function advance() {
+      var current = radios.findIndex(function (r) { return r.checked; });
+      radios[(current + 1) % radios.length].checked = true;
+    }
+    function start() { timer = window.setInterval(advance, 4200); }
+    function stop() { window.clearInterval(timer); }
+
+    radios.forEach(function (radio) {
+      radio.addEventListener("change", function () { stop(); start(); });
+    });
+    dispatch.addEventListener("pointerenter", stop);
+    dispatch.addEventListener("pointerleave", start);
+    dispatch.addEventListener("focusin", stop);
+    dispatch.addEventListener("focusout", start);
+
+    start();
+  })();
+
+  // Progressive enhancement: submit the Mailchimp forms via fetch (no-cors,
+  // so we can't read the response) and show the inline success message
+  // instead of letting Mailchimp's confirmation page open in a new tab.
+  // Without JS, the form still works — it posts normally to Mailchimp with
+  // target="_blank", which opens Mailchimp's own confirmation page instead.
+  (function () {
+    var forms = document.querySelectorAll(".mc-embedded-subscribe-form");
+    Array.prototype.forEach.call(forms, function (form) {
+      form.addEventListener("submit", function (event) {
+        if (!window.fetch) return; // let the native POST/target=_blank fallback run
+        event.preventDefault();
+
+        var success = document.querySelector(form.getAttribute("data-success"));
+        var button = form.querySelector(".signup__submit");
+        var body = new URLSearchParams(new FormData(form));
+
+        if (button) button.disabled = true;
+        fetch(form.action, { method: "POST", mode: "no-cors", body: body })
+          .catch(function () { /* opaque no-cors response; ignore network errors too */ })
+          .then(function () {
+            if (button) button.disabled = false;
+            form.reset();
+            if (success) success.classList.add("is-visible");
+          });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
