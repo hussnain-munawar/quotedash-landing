@@ -465,12 +465,21 @@
         required</strong> &mdash; then choose Starter or Pro. Works in any currency: USD,
         GBP, AUD, and more.</p>
     </div>
+    <div class="wrap pricing__toggle-row">
+      <div class="pricing__toggle" role="group" aria-label="Billing period">
+        <button type="button" class="pricing__toggle-btn" data-period-btn="monthly" aria-pressed="false">Monthly</button>
+        <button type="button" class="pricing__toggle-btn is-active" data-period-btn="annual" aria-pressed="true">Annual <span class="pricing__save-chip">Save up to 38%</span></button>
+      </div>
+    </div>
     <div class="wrap pricing__grid">
       <div class="price-card">
         <h3>Starter</h3>
-        <div class="price-card__price">$12.99<span>&nbsp;/mo</span></div>
-        <p class="price-card__note">or $99/yr &middot; $4.99 first month via Google Play,
-          then $12.99/mo</p>
+        <div class="price-card__price">
+          <span class="price-card__amount" data-price-monthly="$12.99" data-price-annual="$99">$99</span><span class="price-card__unit" data-unit-monthly="/mo" data-unit-annual="/yr">/yr</span>
+        </div>
+        <p class="price-card__note"
+          data-note-monthly="$4.99 first month via Google Play, then $12.99/mo"
+          data-note-annual="Works out to $8.25/mo, billed annually &middot; save 36%">Works out to $8.25/mo, billed annually &middot; save 36%</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>40 quotes &amp; invoices per month</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard app-branded PDF</li>
@@ -481,9 +490,12 @@
       </div>
       <div class="price-card price-card--pro">
         <h3>Pro</h3>
-        <div class="price-card__price">$149<span>&nbsp;/yr</span></div>
-        <p class="price-card__note">$12.42/mo billed annually &middot; 38% off the $19.99/mo
-          plan &middot; $99 first year via Google Play, then $149/yr</p>
+        <div class="price-card__price">
+          <span class="price-card__amount" data-price-monthly="$19.99" data-price-annual="$149">$149</span><span class="price-card__unit" data-unit-monthly="/mo" data-unit-annual="/yr">/yr</span>
+        </div>
+        <p class="price-card__note"
+          data-note-monthly="$9.99 first month via Google Play, then $19.99/mo"
+          data-note-annual="Works out to $12.42/mo &middot; $99 first year via Google Play, then $149/yr">Works out to $12.42/mo &middot; $99 first year via Google Play, then $149/yr</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited quotes &amp; invoices</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>8 branded PDF template styles</li>
@@ -491,7 +503,6 @@
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>CSV export &amp; win-rate/revenue analytics</li>
         </ul>
         <a class="btn btn--dark btn--block" href="#get-app">Go Pro</a>
-        <p class="price-card__footnote">Prefer monthly? $19.99/mo, cancel anytime.</p>
       </div>
     </div>
   </section>
@@ -596,6 +607,34 @@
       a.addEventListener('click', function () {
         nav.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+
+  (function () {
+    var buttons = document.querySelectorAll('[data-period-btn]');
+    if (!buttons.length) { return; }
+
+    function setPeriod(period) {
+      Array.prototype.forEach.call(buttons, function (btn) {
+        var active = btn.getAttribute('data-period-btn') === period;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-price-' + period + ']'), function (el) {
+        el.textContent = el.getAttribute('data-price-' + period);
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-unit-' + period + ']'), function (el) {
+        el.textContent = el.getAttribute('data-unit-' + period);
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-note-' + period + ']'), function (el) {
+        el.textContent = el.getAttribute('data-note-' + period);
+      });
+    }
+
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener('click', function () {
+        setPeriod(btn.getAttribute('data-period-btn'));
       });
     });
   })();
