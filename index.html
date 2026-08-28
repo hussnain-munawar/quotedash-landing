@@ -3,20 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QuoteDash AI — Join the waitlist</title>
-<meta name="description" content="QuoteDash AI turns a spoken walkthrough into a professional PDF quote — even with no signal. Join the waitlist to be first in line at launch.">
+<title>QuoteDash AI — Voice-to-Quote App for Contractors (Android)</title>
+<meta name="description" content="Speak a walkthrough, get a branded PDF quote — even with no signal. QuoteDash AI is the offline-capable voice-to-quote app for contractors and tradies. 5 free quotes, no card required.">
+<link rel="canonical" href="https://quotedashai.com/">
+<link rel="preload" as="font" type="font/ttf" href="assets/fonts/BigShouldersDisplay-Variable.ttf" crossorigin>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="QuoteDash AI — Voice-to-Quote App for Contractors">
+<meta property="og:description" content="Speak a walkthrough, get a branded PDF quote — even with no signal. 5 free quotes, no card required.">
+<meta property="og:image" content="https://quotedashai.com/assets/feature-graphic.png">
+<meta property="og:url" content="https://quotedashai.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "QuoteDash AI",
+  "operatingSystem": "Android",
+  "applicationCategory": "BusinessApplication",
+  "description": "Turns a spoken walkthrough into a professional, branded PDF quote, even offline. Mark it paid and generate the invoice in one tap. Built for contractors and tradies.",
+  "url": "https://quotedashai.com/"
+}
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<a class="skip-link" href="#waitlist-form">Skip to waitlist form</a>
+<a class="skip-link" href="#get-app">Skip to get the app</a>
 
 <header class="site-header">
   <div class="wrap site-header__row">
     <div class="wordmark" aria-label="QuoteDash AI">
       <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
     </div>
-    <a class="btn btn--small" href="#waitlist-form">Join the waitlist</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#features">Features</a>
+      <a href="#templates">Templates</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a class="play-badge play-badge--header" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=launch" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+      <!-- TODO(launch): confirm this listing URL resolves publicly before this ships to production — see docs/LANDING_PAGE_RELAUNCH_PLAN.md §6 blocking item. -->
+      <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+        <rect width="135" height="40" rx="6" fill="#000000"/>
+        <g transform="translate(12,8)">
+          <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+          <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+          <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+          <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+        </g>
+        <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+        <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+      </svg>
+    </a>
   </div>
 </header>
 
@@ -26,55 +70,53 @@
   <section class="hero">
     <div class="wrap hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow">PRE&#8209;LAUNCH WAITLIST &middot; ANDROID</p>
-        <h1 class="hero__headline">Quote the job.<br>No bars required.</h1>
-        <p class="hero__subhead">QuoteDash AI turns a spoken walkthrough into a professional
-          PDF quote &mdash; even in the basement, the shed, or out where your phone drops to
-          zero bars. Speak it, edit it, send it.</p>
-
-        <form id="waitlist-form" class="signup signup--hero mc-embedded-subscribe-form"
-              action="https://bytebuild.us5.list-manage.com/subscribe/post?u=7855b1c48146903b79a15d763&amp;id=484b8ecba6"
-              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate
-              data-success="#thanks">
-          <label class="sr-only" for="email">Email address</label>
-          <input class="signup__input" type="email" id="email" name="EMAIL"
-                 placeholder="you@yourbusiness.com" required autocomplete="email">
-          <!-- Mailchimp anti-bot honeypot: must stay hidden and empty, do not remove -->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_7855b1c48146903b79a15d763_484b8ecba6" tabindex="-1" value="">
+        <p class="eyebrow">CONTRACTOR APP &middot; QUOTE MAKER &middot; ANDROID</p>
+        <h1 class="hero__headline">Speak the job.<br>Get a quote PDF.</h1>
+        <p class="hero__subhead">Stop writing quotes after hours. QuoteDash AI is the quote
+          maker and contractor app for tradespeople and contractors &mdash; speak the job,
+          get a professional, branded PDF, even where your phone drops to zero bars.</p>
+        <div class="hero__ctas">
+          <a class="play-badge play-badge--large" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=launch" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+              <rect width="135" height="40" rx="6" fill="#000000"/>
+              <g transform="translate(12,8)">
+                <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+                <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+                <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+                <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+              </g>
+              <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+              <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+            </svg>
+          </a>
+          <div class="hero__qr">
+            <img src="assets/play-qr.svg" width="82" height="82" alt="QR code linking to the QuoteDash AI Google Play listing">
+            <span class="hero__qr-caption">Scan to<br>install</span>
           </div>
-          <button class="btn btn--primary signup__submit" type="submit" name="subscribe">Reserve my spot</button>
-        </form>
-        <p class="signup__trust">
-          <span class="signup__badge">&#9679; Private beta, Android</span>
-          One email, the day we go live. No spam, no drip campaign.
-        </p>
-
-        <div id="thanks" class="signup__success" role="status">
-          <strong>You&rsquo;re on the list.</strong> We&rsquo;ll email you the day we go live
-          &mdash; and yes, we&rsquo;ll remember you said yes first.
+          <a class="btn btn--ghost" href="#pricing">See pricing</a>
         </div>
+        <p class="hero__meta">No bars required &middot; under 60s audio-to-PDF &middot; 5 free quotes, no card required</p>
       </div>
 
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__ticket">
-          <div class="dispatch__frame">
-            <span class="dispatch__frame-dot"></span>
-            <span class="dispatch__frame-dot"></span>
-            <span class="dispatch__frame-dot"></span>
-            <span class="dispatch__frame-label">QUOTEDASH AI &middot; ANDROID</span>
-          </div>
-          <div class="dispatch__card hero__ticket-card">
-            <p class="dispatch__id">QUOTE #1042 &middot; PDF IN &lt;60s</p>
-            <div class="dispatch__ledger">
-              <div class="dispatch__row"><span>Drywall patch</span><span>1&nbsp;ea</span><span>$22.00</span></div>
-              <div class="dispatch__row"><span>Labor</span><span>2&nbsp;hr</span><span>$130.00</span></div>
-              <div class="dispatch__row dispatch__row--total"><span>Total</span><span></span><span>$152.00</span></div>
-            </div>
-            <p class="dispatch__mono dispatch__mono--ready">PDF READY &middot; SMS / EMAIL / WHATSAPP</p>
-          </div>
+      <div class="hero__visual">
+        <div class="phone-frame">
+          <img src="assets/screens/home.png" width="1080" height="2280" loading="eager" alt="QuoteDash AI home screen with a Start Recording button and a list of recent quotes">
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL PROOF STRIP ============ -->
+  <section class="proof-strip">
+    <div class="wrap proof-strip__row">
+      <span class="proof-strip__item">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        [RATING] on Google Play
+      </span>
+      <span class="proof-strip__divider" aria-hidden="true"></span>
+      <span class="proof-strip__item">[NUMBER]+ quotes &amp; invoices sent</span>
+      <span class="proof-strip__divider" aria-hidden="true"></span>
+      <span class="proof-strip__item">Built for real jobsites &mdash; noise and weak signal included</span>
     </div>
   </section>
 
@@ -89,12 +131,6 @@
         <p class="shop-floor__lede">Real footage, straight off the phone.</p>
       </div>
 
-      <!--
-        Real 15s screen-recorded demo (docs/LANDING_PAGE_BRIEF.md §4.1): a
-        genuine record -> transcribe -> structured extraction -> PDF quote
-        flow captured on-device via `adb shell screenrecord`, cut to three
-        beats with captions burned in. Not stock/AI-generated footage.
-      -->
       <div class="dispatch">
         <div class="dispatch__frame" aria-hidden="true">
           <span class="dispatch__frame-dot"></span>
@@ -112,23 +148,69 @@
 
   <div class="tear tear--dark-to-paper" aria-hidden="true"></div>
 
+  <!-- ============ TWO WAYS TO START ============ -->
+  <section class="showcase showcase--paper showcase--tight">
+    <div class="wrap showcase__inner">
+      <div class="showcase__copy">
+        <p class="eyebrow">TWO WAYS TO START, ONE APP</p>
+        <h2 class="section-title">Quote it. Or skip straight to invoicing it.</h2>
+        <p>Bidding a job? <strong>Create Quote</strong> is the main event on Home &mdash; tap
+          the mic, talk through it. Already did the work and just need paperwork?
+          <strong>Create Invoice</strong> sits right underneath &mdash; a smaller, secondary
+          button, but no quote required first. It opens the same voice recorder, just
+          extracting and labeling everything as an invoice instead of a quote.</p>
+      </div>
+      <div class="showcase__art showcase__art--homecta">
+        <div class="homecta">
+          <p class="homecta__label">Home &middot; QuoteDash AI</p>
+          <div class="homecta__hero">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="13" cy="10" r="4.5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M7.5 12.5V10a5.5 5.5 0 0111 0v2.5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+              <rect x="6.5" y="12.5" width="13" height="6.5" rx="2.2" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+            CREATE QUOTE
+          </div>
+          <div class="homecta__secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 3h9l4 4v14a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M8 10.5h8M8 14h8M8 17.5h5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+            CREATE INVOICE
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ FEATURE STRIP ============ -->
-  <section class="features">
+  <section class="features" id="features">
     <div class="wrap">
-      <p class="eyebrow">THREE THINGS THAT MATTER ON A JOBSITE</p>
+      <p class="eyebrow">WHAT MAKES IT DIFFERENT</p>
       <h2 class="section-title">Built for the jobsite, not a boardroom</h2>
       <ul class="feature-grid">
 
         <li class="feature-card">
           <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="10" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M8 10V8C8 5.239 9.79 3 12 3C14.21 3 16 5.239 16 8V10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <path d="M7 12H17V15C17 17.761 14.866 20 12 20C9.134 20 7 17.761 7 15V12Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M5 12C5 11.448 4.552 11 4 11C3.448 11 3 11.448 3 12V15C3 18.866 6.134 22 10 22H14C17.866 22 21 18.866 21 15V12C21 11.448 20.552 11 20 11C19.448 11 19 11.448 19 12V15C19 17.761 16.866 20 14 20H10C7.134 20 5 17.761 5 15V12Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="12" cy="10" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M8 10V8C8 5.239 9.79 3 12 3C14.21 3 16 5.239 16 8V10" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M7 12H17V15C17 17.761 14.866 20 12 20C9.134 20 7 17.761 7 15V12Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12C5 11.448 4.552 11 4 11C3.448 11 3 11.448 3 12V15C3 18.866 6.134 22 10 22H14C17.866 22 21 18.866 21 15V12C21 11.448 20.552 11 20 11C19.448 11 19 11.448 19 12V15C19 17.761 16.866 20 14 20H10C7.134 20 5 17.761 5 15V12Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
           </svg>
-          <h3>Speak it, don&rsquo;t type it &mdash; even through the noise.</h3>
-          <p>Record-then-transcribe means a compressor or saw kicking in mid&#8209;sentence
-            doesn&rsquo;t wreck the quote the way live&#8209;dictation apps do.</p>
+          <h3>Speak it, don&rsquo;t type it.</h3>
+          <p>Record-then-transcribe means a compressor or saw kicking in mid-sentence
+            doesn&rsquo;t wreck the quote the way live-dictation apps do.</p>
+        </li>
+
+        <li class="feature-card feature-card--new">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 20a8 8 0 100-16 8 8 0 000 16z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Get it wrong? Just say so.</h3>
+          <p>Misspoke a price or quantity mid-recording? Correct it out loud before you stop
+            &mdash; QuoteDash AI applies the fix, no re-recording from scratch. Works while
+            you're still recording; edit the form for anything after that.</p>
         </li>
 
         <li class="feature-card">
@@ -140,8 +222,8 @@
             <path d="M7 12.6H12.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
           </svg>
           <h3>No signal, no problem.</h3>
-          <p>PDF generation and quoting never depend on a network connection &mdash; finish
-            the job in a dead zone, send it the second you&rsquo;re back in range.</p>
+          <p>Finish from your on-device transcript in a dead zone and send it the moment
+            you&rsquo;re back in range &mdash; PDF generation never depends on a connection.</p>
         </li>
 
         <li class="feature-card">
@@ -156,48 +238,333 @@
             <rect x="17.4" y="11.15" width="4.4" height="0.6" fill="currentColor"/>
             <rect x="17.4" y="12.25" width="2.8" height="0.6" fill="currentColor"/>
           </svg>
-          <h3>Remembers your rates.</h3>
-          <p>Save your usual price for drywall, an outlet, a service call &mdash; next time
-            you say it, QuoteDash AI already knows what to charge.</p>
+          <h3>Price Book remembers your rates.</h3>
+          <p>Set your usual price for a service call, a power point, a metre of pipe. Say it
+            again and QuoteDash AI suggests your saved rate automatically.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4" y="3" width="16" height="18" rx="1.5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7.5 8h9M7.5 12h9M7.5 16h5" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+          <h3>9 branded PDF templates.</h3>
+          <p>Pick a style that fits your trade and add your logo &mdash; every quote and
+            invoice matches from then on, not a logo pasted onto a generic template.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 4h9l4 4v12a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Invoice straight away, or convert one.</h3>
+          <p>Skip the quote and invoice a finished job directly, or mark an approved quote
+            paid and generate its invoice &mdash; numbered and referenced automatically.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="9" cy="9.5" r="1.6" fill="currentColor"/>
+            <path d="M5 16l4.5-4.5L13 15l3-3 3 3" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          </svg>
+          <h3>Photos on your line items.</h3>
+          <p>Attach a photo to any line item &mdash; the cracked tile, the damaged run, the
+            extra fitting &mdash; right on the quote.</p>
         </li>
 
       </ul>
+
+      <div class="compare">
+        <p class="compare__label">Why record-then-transcribe, not live dictation</p>
+        <h3 class="compare__title">Most voice-quoting apps garble the second a compressor
+          kicks in. This one doesn&rsquo;t.</h3>
+        <div class="compare__grid">
+          <div class="compare__col compare__col--them">
+            <h4>LIVE-DICTATION APPS</h4>
+            <p>Streams your voice straight into a text field as you talk. A saw, compressor,
+              or gust of wind mid-sentence garbles the line right then &mdash; no retry, no
+              reprocessing.</p>
+          </div>
+          <div class="compare__col compare__col--us">
+            <h4>QUOTEDASH AI</h4>
+            <p>Records the full clip first, then transcribes and extracts it server-side with
+              automatic retry on failure. A bad take gets reprocessed, not retyped from
+              scratch.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ SECOND CTA ============ -->
-  <section class="cta-band">
-    <div class="wrap cta-band__inner">
-      <div class="cta-band__copy">
-        <p class="eyebrow eyebrow--light">DON&rsquo;T MISS LAUNCH DAY</p>
-        <h2>Be first in line when we open up.</h2>
-        <p>QuoteDash AI is in private testing on Android right now. Join the waitlist and
-          we&rsquo;ll email you the moment it&rsquo;s live &mdash; nothing before that.</p>
-      </div>
-      <div class="cta-band__form">
-        <form class="signup signup--band mc-embedded-subscribe-form"
-              action="https://bytebuild.us5.list-manage.com/subscribe/post?u=7855b1c48146903b79a15d763&amp;id=484b8ecba6"
-              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate
-              data-success="#thanks-band">
-          <label class="sr-only" for="email-2">Email address</label>
-          <input class="signup__input" type="email" id="email-2" name="EMAIL"
-                 placeholder="you@yourbusiness.com" required autocomplete="email">
-          <!-- Mailchimp anti-bot honeypot: must stay hidden and empty, do not remove -->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_7855b1c48146903b79a15d763_484b8ecba6" tabindex="-1" value="">
-          </div>
-          <button class="btn btn--primary signup__submit" type="submit" name="subscribe">Reserve my spot</button>
-        </form>
-        <p class="signup__trust">
-          <span class="signup__badge">&#9679; Private beta, Android</span>
-          Zero spam. Launch&#8209;day invite only.
-        </p>
+  <!-- ============ GALLERY: STORY-DRIVEN SCREENSHOT SHOWCASE ============ -->
+  <section class="gallery">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light">FROM DRIVEWAY TO INBOX</p>
+      <h2 class="section-title">One job, start to finish.</h2>
+      <p class="gallery__lede">Speak it, watch it turn into pricing, brand it, invoice it,
+        track it &mdash; and send it, signal or not.</p>
+      <div class="gallery__rail">
+        <div class="gallery__line" aria-hidden="true"></div>
+        <div class="gallery__track">
 
-        <div id="thanks-band" class="signup__success" role="status">
-          <strong>You&rsquo;re on the list.</strong> We&rsquo;ll email you the day we go live
-          &mdash; and yes, we&rsquo;ll remember you said yes first.
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/quote-pdf.png" width="1080" height="2280" loading="lazy" alt="Finished quote PDF with line items, rates, subtotal, tax and total"></div>
+            <p class="gallery__num">01 &middot; THE OUTCOME</p>
+            <p class="gallery__caption">A professional quote, ready to send.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/record.png" width="1080" height="2280" loading="lazy" alt="Recording screen with a live waveform capturing a spoken walkthrough"></div>
+            <p class="gallery__num">02 &middot; SPEAK IT</p>
+            <p class="gallery__caption">Skip typing, quote faster on site.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/processing.png" width="1080" height="2280" loading="lazy" alt="Processing screen extracting quote details from the recording"></div>
+            <p class="gallery__num">03 &middot; AI STRUCTURES IT</p>
+            <p class="gallery__caption">Raw speech becomes itemized pricing.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/invoice-flow.jpg" width="572" height="1024" loading="lazy" alt="Approved quote transitioning to an invoice PDF with an invoice number and reference"></div>
+            <p class="gallery__num">04 &middot; INVOICE IT</p>
+            <p class="gallery__caption">No duplicate entry after approval.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/branded-templates.jpg" width="572" height="1024" loading="lazy" alt="Invoice PDF with business logo and branded template styling"></div>
+            <p class="gallery__num">05 &middot; BRAND IT</p>
+            <p class="gallery__caption">Branded like it's yours.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/history.png" width="1080" height="2280" loading="lazy" alt="Quote history list with client name, amount, date and status chips"></div>
+            <p class="gallery__num">06 &middot; TRACK IT</p>
+            <p class="gallery__caption">Find and re-share any document fast.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/noisy-jobsites.jpg" width="572" height="1024" loading="lazy" alt="Recording UI staying calm and legible against a jobsite backdrop"></div>
+            <p class="gallery__num">07 &middot; THROUGH THE NOISE</p>
+            <p class="gallery__caption">Built for real jobsite conditions.</p>
+          </div>
+
+          <div class="gallery__card">
+            <div class="gallery__dot"></div>
+            <div class="gallery__frame"><img src="assets/screens/weak-signal.jpg" width="572" height="1024" loading="lazy" alt="Quote finishing and sending even with weak signal"></div>
+            <p class="gallery__num">08 &middot; SEND IT ANYWAY</p>
+            <p class="gallery__caption">Finish now, send the moment you reconnect.</p>
+          </div>
+
         </div>
       </div>
+      <p class="gallery__hint">&larr; drag to see the full job &rarr;</p>
+    </div>
+  </section>
+
+  <!-- ============ PRICE BOOK SHOWCASE ============ -->
+  <section class="showcase showcase--paper">
+    <div class="wrap showcase__inner">
+      <div class="showcase__copy">
+        <p class="eyebrow">PERSONAL PRICE BOOK</p>
+        <h2 class="section-title">Say it once. It remembers the rate forever.</h2>
+        <p>Set a default rate for the jobs you quote all the time &mdash; a service call, a
+          power point, a metre of pipe. Next time you say it, QuoteDash AI recognizes the
+          item and suggests your saved price automatically, so the same line item takes half
+          the time to quote.</p>
+        <p class="showcase__microcopy">Works in any currency &mdash; the price book is fully
+          yours, no supplier account needed.</p>
+      </div>
+      <div class="showcase__art showcase__art--pricebook">
+        <div class="pricebook-row">
+          <div>
+            <div class="pricebook-row__desc">Standard service call</div>
+            <div class="pricebook-row__meta">CALL-OUT &middot; per visit</div>
+          </div>
+          <div class="pricebook-row__rate">$95.00</div>
+        </div>
+        <div class="pricebook-row">
+          <div>
+            <div class="pricebook-row__desc">Double power point</div>
+            <div class="pricebook-row__meta">ELECTRICAL &middot; per unit</div>
+          </div>
+          <div class="pricebook-row__rate">$65.00</div>
+        </div>
+        <div class="pricebook-row">
+          <div>
+            <div class="pricebook-row__desc">Copper pipe, 15mm</div>
+            <div class="pricebook-row__meta">PLUMBING &middot; per metre</div>
+          </div>
+          <div class="pricebook-row__rate">$18.50</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEMPLATES + BRANDING SHOWCASE ============ -->
+  <section class="showcase showcase--dark" id="templates">
+    <div class="wrap showcase__inner is-reversed">
+      <div class="showcase__art showcase__art--single">
+        <img src="assets/screens/branded-templates.jpg" width="572" height="1024" loading="lazy" alt="Branded PDF quote with logo and custom accent color">
+      </div>
+      <div class="showcase__copy">
+        <p class="eyebrow eyebrow--light">BRANDED TEMPLATES &amp; LOGO</p>
+        <h2 class="section-title">Every document, branded like it's yours.</h2>
+        <p>Add your logo and pick from 9 professionally designed quote and invoice layouts.
+          Choose once in settings &mdash; every document after that renders in your style
+          automatically. No logo pasted onto a generic template.</p>
+        <div class="template-swatches">
+          <span class="template-swatch template-swatch--free">Classic (free)</span>
+          <span class="template-swatch">Modern</span>
+          <span class="template-swatch">Bold Ink &amp; Amber</span>
+          <span class="template-swatch">Navy Corner Flag</span>
+          <span class="template-swatch">Diagonal Corporate</span>
+          <span class="template-swatch">Sidebar Botanical</span>
+          <span class="template-swatch">Elegant Leaf Serif</span>
+          <span class="template-swatch">Ring Mark Bold</span>
+          <span class="template-swatch">Beige Minimalist</span>
+        </div>
+        <p class="showcase__microcopy">9 styles, one flat price &mdash; 8 included with Pro,
+          Classic free forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVOICING SHOWCASE ============ -->
+  <section class="showcase showcase--paper">
+    <div class="wrap showcase__inner">
+      <div class="showcase__copy">
+        <p class="eyebrow">QUOTE TO INVOICE</p>
+        <h2 class="section-title">From quote to invoice, in one tap &mdash; or skip straight
+          to it.</h2>
+        <p>Mark an approved quote paid and tap Generate Invoice: a proper tax invoice with a
+          sequential invoice number, a reference back to the original quote, and a paid stamp
+          instead of a due date. Already did the job? Tap <strong>Create Invoice</strong> from
+          Home and skip the quote step entirely. No re-entry, no separate invoicing app.</p>
+      </div>
+      <div class="showcase__art showcase__art--single">
+        <img src="assets/screens/invoice-flow.jpg" width="572" height="1024" loading="lazy" alt="An approved quote next to the invoice it generated, with an invoice number, quote reference line and a paid stamp">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="wrap pricing__head">
+      <p class="eyebrow">SIMPLE PRICING</p>
+      <h2 class="section-title">Try it free. Then pick the plan that fits.</h2>
+      <p class="pricing__lede">Every plan starts with <strong>5 free quotes, no card
+        required</strong> &mdash; then choose Starter or Pro. Works in any currency: USD,
+        GBP, AUD, and more.</p>
+    </div>
+    <div class="wrap pricing__grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price-card__price">$12.99<span>&nbsp;/mo</span></div>
+        <p class="price-card__note">or $99/yr &middot; $4.99 first month via Google Play,
+          then $12.99/mo</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>40 quotes &amp; invoices per month</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard app-branded PDF</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Offline quote &amp; invoice generation</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Personal price book</li>
+        </ul>
+        <a class="btn btn--ghost btn--block" href="#get-app">Start with Starter</a>
+      </div>
+      <div class="price-card price-card--pro">
+        <h3>Pro</h3>
+        <div class="price-card__price">$149<span>&nbsp;/yr</span></div>
+        <p class="price-card__note">$12.42/mo billed annually &middot; 38% off the $19.99/mo
+          plan &middot; $99 first year via Google Play, then $149/yr</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited quotes &amp; invoices</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>8 branded PDF template styles</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom accent color</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>CSV export &amp; win-rate/revenue analytics</li>
+        </ul>
+        <a class="btn btn--dark btn--block" href="#get-app">Go Pro</a>
+        <p class="price-card__footnote">Prefer monthly? $19.99/mo, cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq__head">
+      <p class="eyebrow">QUESTIONS</p>
+      <h2 class="section-title">Before you install</h2>
+    </div>
+    <div class="wrap faq__list">
+      <details class="faq__item">
+        <summary>What happens after my 5 free quotes?</summary>
+        <p>You'll be prompted to choose Starter ($12.99/mo, 40 quotes/month) or Pro ($149/yr
+          or $19.99/mo, unlimited) &mdash; no surprise charge, and no card is needed for the
+          free quotes themselves.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What if I misspeak a price or quantity while recording?</summary>
+        <p>Just correct yourself out loud before you stop the recording &mdash; say the right
+          price or quantity and QuoteDash AI uses the correction, no need to start over. This
+          only works within the same recording; once you've stopped, fix it in the form like
+          any other edit.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Does it really work with no signal?</summary>
+        <p>Yes, for finishing and sending. No bars? Write up the job from your recording by
+          hand and send the PDF the moment you're back in range &mdash; that part never needs
+          a connection. The AI auto-fill (turning your voice into priced line items) does
+          need signal to work, but it never stops you getting a quote out the door.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is my data safe?</summary>
+        <p>QuoteDash AI is built to work offline &mdash; job details, quotes, and invoices
+          stay on your device unless you export or share them. We don't sell your data or
+          read the contents of your quotes. Full details in our
+          <a href="privacy.html">privacy policy</a>.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is there an iOS app?</summary>
+        <p>Not yet &mdash; QuoteDash AI is Android-only today. iOS is a future direction, not
+          a committed date.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can I cancel anytime?</summary>
+        <p>Yes &mdash; both Starter and Pro are standard Google Play subscriptions and can be
+          cancelled anytime from Play Store subscription settings.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta-band" id="get-app">
+    <div class="wrap cta-band__inner cta-band__inner--centered">
+      <div class="cta-band__copy">
+        <p class="eyebrow eyebrow--light">GET THE APP</p>
+        <h2>Quote the next job before you leave the truck.</h2>
+        <p>5 free quotes, no card required. Available now on Android.</p>
+      </div>
+      <a class="play-badge play-badge--large" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=launch" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+        <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+          <rect width="135" height="40" rx="6" fill="#000000"/>
+          <g transform="translate(12,8)">
+            <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+            <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+            <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+            <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+          </g>
+          <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+          <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+        </svg>
+      </a>
     </div>
   </section>
 
@@ -205,40 +572,31 @@
 
 <footer class="site-footer">
   <div class="wrap site-footer__row">
-    <div class="wordmark wordmark--footer" aria-label="QuoteDash AI">
-      <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+    <div>
+      <div class="wordmark wordmark--footer" aria-label="QuoteDash AI">
+        <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+      </div>
+      <p class="site-footer__copy">The offline-capable quote maker and construction
+        estimating software for contractors and tradies.</p>
     </div>
-    <p class="site-footer__copy">QuoteDash AI is currently in private testing on Android.
-      Join the waitlist to be first in line when we open up.</p>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
   </div>
 </footer>
 
-
 <script>
-  // Progressive enhancement: submit the Mailchimp forms via fetch (no-cors,
-  // so we can't read the response) and show the inline success message
-  // instead of letting Mailchimp's confirmation page open in a new tab.
-  // Without JS, the form still works — it posts normally to Mailchimp with
-  // target="_blank", which opens Mailchimp's own confirmation page instead.
   (function () {
-    var forms = document.querySelectorAll(".mc-embedded-subscribe-form");
-    Array.prototype.forEach.call(forms, function (form) {
-      form.addEventListener("submit", function (event) {
-        if (!window.fetch) return; // let the native POST/target=_blank fallback run
-        event.preventDefault();
-
-        var success = document.querySelector(form.getAttribute("data-success"));
-        var button = form.querySelector(".signup__submit");
-        var body = new URLSearchParams(new FormData(form));
-
-        if (button) button.disabled = true;
-        fetch(form.action, { method: "POST", mode: "no-cors", body: body })
-          .catch(function () { /* opaque no-cors response; ignore network errors too */ })
-          .then(function () {
-            if (button) button.disabled = false;
-            form.reset();
-            if (success) success.classList.add("is-visible");
-          });
+    var nav = document.getElementById('site-nav');
+    var toggle = document.getElementById('nav-toggle');
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    Array.prototype.forEach.call(nav.querySelectorAll('a'), function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
     });
   })();
