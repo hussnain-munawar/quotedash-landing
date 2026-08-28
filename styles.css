@@ -790,6 +790,7 @@ button { font: inherit; }
 .price-card__amount { font-family: var(--font-display); font-size: 2.3rem; font-weight: 800; }
 .price-card__unit { font-family: var(--font-body); font-size: 0.85rem; font-weight: 500; color: var(--steel-border); }
 .price-card__note { font-size: 0.8rem; color: var(--steel-border); margin: 0 0 var(--space-lg); min-height: 2.4em; }
+.price-card__plus { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--steel-border); margin: 0 0 var(--space-sm); }
 .price-card ul { display: flex; flex-direction: column; gap: var(--space-sm); margin-bottom: var(--space-lg); }
 .price-card li { font-size: 0.92rem; display: flex; gap: 9px; align-items: flex-start; }
 .price-card li svg { flex: none; margin-top: 2px; color: var(--signal-green); }
