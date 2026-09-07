@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.quotetap.app",
+      "sha256_cert_fingerprints":
+        ["11:ED:D6:2F:67:0B:70:11:DF:77:51:70:B8:61:73:66:30:4D:0B:91:05:55:AF:EB:E4:D4:80:5D:36:EC:D5:1D"]
+    }
+  }
+]

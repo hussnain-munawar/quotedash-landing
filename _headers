@@ -22,5 +22,9 @@
 /styles.css
   Cache-Control: public, max-age=86400
 
+/.well-known/assetlinks.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json
+
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
