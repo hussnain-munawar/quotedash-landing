@@ -10,7 +10,7 @@
 /assets/demo.mp4
   Cache-Control: public, max-age=604800
 
-/assets/demo-poster.jpg
+/assets/demo-poster.webp
   Cache-Control: public, max-age=604800
 
 /assets/feature-graphic.png
