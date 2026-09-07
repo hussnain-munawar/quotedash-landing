@@ -1,7 +1,22 @@
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-/assets/*
+/assets/screens/*
+  Cache-Control: public, max-age=604800
+
+/assets/icons/*
+  Cache-Control: public, max-age=604800
+
+/assets/demo.mp4
+  Cache-Control: public, max-age=604800
+
+/assets/demo-poster.jpg
+  Cache-Control: public, max-age=604800
+
+/assets/feature-graphic.png
+  Cache-Control: public, max-age=604800
+
+/assets/play-qr.svg
   Cache-Control: public, max-age=604800
 
 /styles.css
