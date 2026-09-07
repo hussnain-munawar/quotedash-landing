@@ -33,91 +33,127 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "QuoteDash AI",
-  "operatingSystem": "Android",
-  "applicationCategory": "BusinessApplication",
-  "description": "Turns a spoken walkthrough into a professional, branded PDF quote, even offline. Mark it paid and generate the invoice in one tap. Built for contractors and tradies.",
-  "url": "https://quotedashai.com/",
-  "offers": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "name": "Free",
-      "price": "0",
-      "priceCurrency": "USD"
+      "@type": "Organization",
+      "@id": "https://quotedashai.com/#organization",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/"
     },
     {
-      "@type": "Offer",
-      "name": "Starter",
-      "price": "16.99",
-      "priceCurrency": "USD"
+      "@type": "WebSite",
+      "@id": "https://quotedashai.com/#website",
+      "url": "https://quotedashai.com/",
+      "name": "QuoteDash AI",
+      "publisher": {
+        "@id": "https://quotedashai.com/#organization"
+      }
     },
     {
-      "@type": "Offer",
-      "name": "Pro",
-      "price": "27.99",
-      "priceCurrency": "USD"
+      "@type": "SoftwareApplication",
+      "@id": "https://quotedashai.com/#software",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Turns a spoken walkthrough into a professional, branded PDF quote, even offline. Mark it paid and generate the invoice in one tap. Built for contractors and tradies.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "16.99",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "27.99",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://quotedashai.com/#webpage",
+      "url": "https://quotedashai.com/",
+      "name": "QuoteDash AI — Voice-to-Quote App for Contractors (Android)",
+      "isPartOf": {
+        "@id": "https://quotedashai.com/#website"
+      },
+      "about": {
+        "@id": "https://quotedashai.com/#software"
+      },
+      "mainEntity": {
+        "@id": "https://quotedashai.com/#faq"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens after my 10 free quotes or 14-day trial window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You'll be prompted to choose Starter ($16.99/mo, 40 quotes/month) or Pro ($209/yr or $27.99/mo, unlimited) — no surprise charge, and no card is needed to start your trial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I misspeak a price or quantity while recording?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Just correct yourself out loud before you stop the recording — say the right price or quantity and QuoteDash AI uses the correction, no need to start over. This only works within the same recording; once you've stopped, fix it in the form like any other edit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it really work with no signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for finishing and sending. No bars? Write up the job from your recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QuoteDash AI is built to work offline — job details, quotes, and invoices stay on your device unless you export or share them. We don't sell your data or read the contents of your quotes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an iOS app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel anytime?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — both Starter and Pro are standard Google Play subscriptions and can be cancelled anytime from Play Store subscription settings."
+          }
+        }
+      ],
+      "@id": "https://quotedashai.com/#faq",
+      "url": "https://quotedashai.com/"
     }
   ]
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What happens after my 10 free quotes or 14-day trial window?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You'll be prompted to choose Starter ($16.99/mo, 40 quotes/month) or Pro ($209/yr or $27.99/mo, unlimited) — no surprise charge, and no card is needed to start your trial."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I misspeak a price or quantity while recording?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Just correct yourself out loud before you stop the recording — say the right price or quantity and QuoteDash AI uses the correction, no need to start over. This only works within the same recording; once you've stopped, fix it in the form like any other edit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does it really work with no signal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for finishing and sending. No bars? Write up the job from your recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my data safe?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "QuoteDash AI is built to work offline — job details, quotes, and invoices stay on your device unless you export or share them. We don't sell your data or read the contents of your quotes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there an iOS app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel anytime?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — both Starter and Pro are standard Google Play subscriptions and can be cancelled anytime from Play Store subscription settings."
-      }
-    }
-  ]
-}
-</script>
+
+
 
 <style>
 /* QuoteDash AI — waitlist landing page

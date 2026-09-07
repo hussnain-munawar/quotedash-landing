@@ -33,79 +33,141 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "QuoteDash AI",
-  "operatingSystem": "Android",
-  "applicationCategory": "BusinessApplication",
-  "description": "Voice-to-quote app for electricians. Speak a callout, get a professional, branded PDF quote, even offline. Remembers your standard power point and switchboard rates.",
-  "url": "https://quotedashai.com/electricians.html",
-  "offers": [
-    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Starter", "price": "16.99", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Pro", "price": "27.99", "priceCurrency": "USD" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "QuoteDash AI", "item": "https://quotedashai.com/" },
-    { "@type": "ListItem", "position": 2, "name": "For Electricians", "item": "https://quotedashai.com/electricians.html" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Does this work for switch rooms, basements, and roof cavities with no signal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for finishing and sending. No bars in a switch room or basement? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+      "@type": "Organization",
+      "@id": "https://quotedashai.com/#organization",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://quotedashai.com/#website",
+      "url": "https://quotedashai.com/",
+      "name": "QuoteDash AI",
+      "publisher": {
+        "@id": "https://quotedashai.com/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can I save my standard rates for power points, switchboards, and safety switches?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a double power point or a service call. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+      "@type": "SoftwareApplication",
+      "@id": "https://quotedashai.com/#software",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Voice-to-quote app for electricians. Speak a callout, get a professional, branded PDF quote, even offline. Remembers your standard power point and switchboard rates.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "16.99",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "27.99",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://quotedashai.com/electricians.html#webpage",
+      "url": "https://quotedashai.com/electricians.html",
+      "name": "QuoteDash AI — Voice Quote App for Electricians (Android)",
+      "isPartOf": {
+        "@id": "https://quotedashai.com/#website"
+      },
+      "about": {
+        "@id": "https://quotedashai.com/#software"
+      },
+      "mainEntity": {
+        "@id": "https://quotedashai.com/electricians.html#faq"
+      },
+      "breadcrumb": {
+        "@id": "https://quotedashai.com/electricians.html#breadcrumb"
       }
     },
     {
-      "@type": "Question",
-      "name": "What if a compressor, saw, or drill kicks in while I'm recording a quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "QuoteDash AI",
+          "item": "https://quotedashai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "For Electricians",
+          "item": "https://quotedashai.com/electricians.html"
+        }
+      ],
+      "@id": "https://quotedashai.com/electricians.html#breadcrumb"
     },
     {
-      "@type": "Question",
-      "name": "Can I show a customer a photo of the fault or fitting on the quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — attach a photo to any line item, like a damaged run or a scorched outlet, so the customer can see exactly what they're paying for, right on the quote."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there an iOS app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does this work for switch rooms, basements, and roof cavities with no signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for finishing and sending. No bars in a switch room or basement? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save my standard rates for power points, switchboards, and safety switches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a double power point or a service call. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a compressor, saw, or drill kicks in while I'm recording a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I show a customer a photo of the fault or fitting on the quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — attach a photo to any line item, like a damaged run or a scorched outlet, so the customer can see exactly what they're paying for, right on the quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an iOS app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
+          }
+        }
+      ],
+      "@id": "https://quotedashai.com/electricians.html#faq",
+      "url": "https://quotedashai.com/electricians.html"
     }
   ]
 }
 </script>
+
+
+
+
 
 <style>
 /* QuoteDash AI — waitlist landing page

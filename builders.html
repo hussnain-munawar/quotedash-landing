@@ -33,79 +33,141 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "QuoteDash AI",
-  "operatingSystem": "Android",
-  "applicationCategory": "BusinessApplication",
-  "description": "Voice-to-quote app for builders. Speak a site walkthrough, get a professional, branded PDF quote, even offline. Remembers your standard labor and materials rates.",
-  "url": "https://quotedashai.com/builders.html",
-  "offers": [
-    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Starter", "price": "16.99", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Pro", "price": "27.99", "priceCurrency": "USD" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "QuoteDash AI", "item": "https://quotedashai.com/" },
-    { "@type": "ListItem", "position": 2, "name": "For Builders", "item": "https://quotedashai.com/builders.html" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Does this work on a site with no signal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for finishing and sending. No bars on site? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+      "@type": "Organization",
+      "@id": "https://quotedashai.com/#organization",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://quotedashai.com/#website",
+      "url": "https://quotedashai.com/",
+      "name": "QuoteDash AI",
+      "publisher": {
+        "@id": "https://quotedashai.com/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can I save my standard rates for labor, framing, and materials?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a day of labor or a standard site cleanup. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+      "@type": "SoftwareApplication",
+      "@id": "https://quotedashai.com/#software",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Voice-to-quote app for builders. Speak a site walkthrough, get a professional, branded PDF quote, even offline. Remembers your standard labor and materials rates.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "16.99",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "27.99",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://quotedashai.com/builders.html#webpage",
+      "url": "https://quotedashai.com/builders.html",
+      "name": "QuoteDash AI — Voice Quote App for Builders (Android)",
+      "isPartOf": {
+        "@id": "https://quotedashai.com/#website"
+      },
+      "about": {
+        "@id": "https://quotedashai.com/#software"
+      },
+      "mainEntity": {
+        "@id": "https://quotedashai.com/builders.html#faq"
+      },
+      "breadcrumb": {
+        "@id": "https://quotedashai.com/builders.html#breadcrumb"
       }
     },
     {
-      "@type": "Question",
-      "name": "What if a saw, nail gun, or compressor is loud while I'm recording a quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "QuoteDash AI",
+          "item": "https://quotedashai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "For Builders",
+          "item": "https://quotedashai.com/builders.html"
+        }
+      ],
+      "@id": "https://quotedashai.com/builders.html#breadcrumb"
     },
     {
-      "@type": "Question",
-      "name": "Can I show a customer a photo of the site or the damage on the quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — attach a photo to any line item, like existing damage or a section of the site, so the customer can see exactly what they're paying for, right on the quote."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there an iOS app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does this work on a site with no signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for finishing and sending. No bars on site? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save my standard rates for labor, framing, and materials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a day of labor or a standard site cleanup. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a saw, nail gun, or compressor is loud while I'm recording a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I show a customer a photo of the site or the damage on the quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — attach a photo to any line item, like existing damage or a section of the site, so the customer can see exactly what they're paying for, right on the quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an iOS app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
+          }
+        }
+      ],
+      "@id": "https://quotedashai.com/builders.html#faq",
+      "url": "https://quotedashai.com/builders.html"
     }
   ]
 }
 </script>
+
+
+
+
 
 <style>
 /* QuoteDash AI — waitlist landing page

@@ -33,79 +33,141 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "QuoteDash AI",
-  "operatingSystem": "Android",
-  "applicationCategory": "BusinessApplication",
-  "description": "Voice-to-quote app for plumbers. Speak a callout, get a professional, branded PDF quote, even offline. Remembers your standard copper pipe and service call rates.",
-  "url": "https://quotedashai.com/plumbers.html",
-  "offers": [
-    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Starter", "price": "16.99", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Pro", "price": "27.99", "priceCurrency": "USD" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "QuoteDash AI", "item": "https://quotedashai.com/" },
-    { "@type": "ListItem", "position": 2, "name": "For Plumbers", "item": "https://quotedashai.com/plumbers.html" }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Does this work under a house or in a basement with no signal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for finishing and sending. No bars under the house or in a basement? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+      "@type": "Organization",
+      "@id": "https://quotedashai.com/#organization",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://quotedashai.com/#website",
+      "url": "https://quotedashai.com/",
+      "name": "QuoteDash AI",
+      "publisher": {
+        "@id": "https://quotedashai.com/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can I save my standard rates for copper pipe, fittings, and service calls?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a metre of copper pipe or a standard service call. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+      "@type": "SoftwareApplication",
+      "@id": "https://quotedashai.com/#software",
+      "name": "QuoteDash AI",
+      "url": "https://quotedashai.com/",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Voice-to-quote app for plumbers. Speak a callout, get a professional, branded PDF quote, even offline. Remembers your standard copper pipe and service call rates.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "16.99",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "27.99",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://quotedashai.com/plumbers.html#webpage",
+      "url": "https://quotedashai.com/plumbers.html",
+      "name": "QuoteDash AI — Voice Quote App for Plumbers (Android)",
+      "isPartOf": {
+        "@id": "https://quotedashai.com/#website"
+      },
+      "about": {
+        "@id": "https://quotedashai.com/#software"
+      },
+      "mainEntity": {
+        "@id": "https://quotedashai.com/plumbers.html#faq"
+      },
+      "breadcrumb": {
+        "@id": "https://quotedashai.com/plumbers.html#breadcrumb"
       }
     },
     {
-      "@type": "Question",
-      "name": "What if a running tap or a generator is loud while I'm recording a quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "QuoteDash AI",
+          "item": "https://quotedashai.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "For Plumbers",
+          "item": "https://quotedashai.com/plumbers.html"
+        }
+      ],
+      "@id": "https://quotedashai.com/plumbers.html#breadcrumb"
     },
     {
-      "@type": "Question",
-      "name": "Can I show a customer a photo of the leak or the damaged fitting on the quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — attach a photo to any line item, like a burst fitting or a corroded pipe, so the customer can see exactly what they're paying for, right on the quote."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there an iOS app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does this work under a house or in a basement with no signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for finishing and sending. No bars under the house or in a basement? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save my standard rates for copper pipe, fittings, and service calls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a metre of copper pipe or a standard service call. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a running tap or a generator is loud while I'm recording a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I show a customer a photo of the leak or the damaged fitting on the quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — attach a photo to any line item, like a burst fitting or a corroded pipe, so the customer can see exactly what they're paying for, right on the quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an iOS app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
+          }
+        }
+      ],
+      "@id": "https://quotedashai.com/plumbers.html#faq",
+      "url": "https://quotedashai.com/plumbers.html"
     }
   ]
 }
 </script>
+
+
+
+
 
 <style>
 /* QuoteDash AI — waitlist landing page
