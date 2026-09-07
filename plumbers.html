@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuoteDash AI — Voice Quote App for Plumbers (Android)</title>
+<meta name="description" content="Speak the callout, get a branded plumbing quote PDF — even under a house or in a basement with no signal. QuoteDash AI remembers your copper pipe and service call rates. 10 free quotes, no card required.">
+<link rel="canonical" href="https://quotedashai.com/plumbers.html">
+<link rel="preload" as="font" type="font/ttf" href="assets/fonts/BigShouldersDisplay-Variable.ttf" crossorigin>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP69P84Q9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YRP69P84Q9');
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="QuoteDash AI — Voice Quote App for Plumbers">
+<meta property="og:description" content="Speak the callout, get a branded plumbing quote PDF — even with no signal. 10 free quotes, no card required.">
+<meta property="og:image" content="https://quotedashai.com/assets/feature-graphic.png">
+<meta property="og:url" content="https://quotedashai.com/plumbers.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "QuoteDash AI",
+  "operatingSystem": "Android",
+  "applicationCategory": "BusinessApplication",
+  "description": "Voice-to-quote app for plumbers. Speak a callout, get a professional, branded PDF quote, even offline. Remembers your standard copper pipe and service call rates.",
+  "url": "https://quotedashai.com/plumbers.html",
+  "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Starter", "price": "16.99", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Pro", "price": "27.99", "priceCurrency": "USD" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "QuoteDash AI", "item": "https://quotedashai.com/" },
+    { "@type": "ListItem", "position": 2, "name": "For Plumbers", "item": "https://quotedashai.com/plumbers.html" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this work under a house or in a basement with no signal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for finishing and sending. No bars under the house or in a basement? Write up the job from your on-device recording by hand and send the PDF the moment you're back in range — that part never needs a connection. The AI auto-fill (turning your voice into priced line items) does need signal to work, but it never stops you getting a quote out the door."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save my standard rates for copper pipe, fittings, and service calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — the Personal Price Book lets you set a default rate for jobs you quote all the time, like a metre of copper pipe or a standard service call. Say it again on a future job and QuoteDash AI recognizes the item and suggests your saved rate automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a running tap or a generator is loud while I'm recording a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QuoteDash AI records the full clip first, then transcribes and extracts it server-side with automatic retry on failure — a bad take gets reprocessed, not retyped from scratch. Live-dictation apps that stream your voice straight into a text field garble the line the moment site noise kicks in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I show a customer a photo of the leak or the damaged fitting on the quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — attach a photo to any line item, like a burst fitting or a corroded pipe, so the customer can see exactly what they're paying for, right on the quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an iOS app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet — QuoteDash AI is Android-only today. iOS is a future direction, not a committed date."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#get-app">Skip to get the app</a>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a class="wordmark" aria-label="QuoteDash AI" href="index.html">
+      <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+    </a>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#templates">Templates</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a class="play-badge play-badge--header" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=plumbers" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+      <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+        <rect width="135" height="40" rx="6" fill="#000000"/>
+        <g transform="translate(12,8)">
+          <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+          <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+          <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+          <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+        </g>
+        <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+        <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">QUOTE APP &middot; FOR PLUMBERS &middot; ANDROID</p>
+        <h1 class="hero__headline">Speak the callout.<br>Get a quote PDF.</h1>
+        <p class="hero__subhead">Stop writing plumbing quotes after hours. QuoteDash AI is
+          the voice-to-quote app for plumbers &mdash; speak the job, get a professional,
+          branded PDF, even under a house or in a basement with no signal.</p>
+        <div class="hero__ctas">
+          <a class="play-badge play-badge--large" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=plumbers" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+              <rect width="135" height="40" rx="6" fill="#000000"/>
+              <g transform="translate(12,8)">
+                <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+                <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+                <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+                <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+              </g>
+              <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+              <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+            </svg>
+          </a>
+          <div class="hero__qr">
+            <img src="assets/play-qr.svg" width="82" height="82" alt="QR code linking to the QuoteDash AI Google Play listing">
+            <span class="hero__qr-caption">Scan to<br>install</span>
+          </div>
+          <a class="btn btn--ghost" href="index.html#pricing">See pricing</a>
+        </div>
+        <p class="hero__meta">No bars required &middot; under 60s audio-to-PDF &middot; 10 free quotes, no card required</p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="phone-frame">
+          <img src="assets/screens/home.png" width="1080" height="2280" loading="eager" alt="QuoteDash AI home screen with a Start Recording button and a list of recent quotes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tear tear--paper-to-dark" aria-hidden="true"></div>
+
+  <!-- ============ BUILT FOR PLUMBING CALLOUTS ============ -->
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="eyebrow">BUILT FOR PLUMBING CALLOUTS</p>
+      <h2 class="section-title">Quote the hot water job before you're back in the van</h2>
+      <ul class="feature-grid">
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="10" cy="12" r="7.5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="10" cy="12" r="1.1" fill="currentColor"/>
+            <rect x="9.5" y="5.3" width="1" height="2" fill="currentColor"/>
+            <rect x="9.5" y="16.7" width="1" height="2" fill="currentColor"/>
+            <rect x="3.3" y="11.5" width="2" height="1" fill="currentColor"/>
+            <rect x="14.7" y="11.5" width="2" height="1" fill="currentColor"/>
+            <rect x="16.5" y="10.4" width="6.2" height="3.2" rx="0.6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+          </svg>
+          <h3>Remembers your copper pipe rate.</h3>
+          <p>Set a default price per metre of copper pipe, a standard service call, or a hot
+            water system swap. Say it on the next job and QuoteDash AI suggests your saved
+            rate automatically.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 3H20V16.2L18.5 14.7L17 16.2L15.5 14.7L14 16.2L12.5 14.7L11 16.2L9.5 14.7L8 16.2L6.5 14.7L5 16.2L4 14.7V3Z"
+                  fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M7 7H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M7 9.8H17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          <h3>Works under the house or in the basement.</h3>
+          <p>No bars under a house, in a basement, or a crawlspace? Finish the quote from
+            your on-device transcript and send it the moment you're back in range &mdash;
+            PDF generation never depends on a connection.</p>
+        </li>
+
+        <li class="feature-card">
+          <svg class="feature-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="9" cy="9.5" r="1.6" fill="currentColor"/>
+            <path d="M5 16l4.5-4.5L13 15l3-3 3 3" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          </svg>
+          <h3>Photo the leak or damaged fitting.</h3>
+          <p>Attach a photo to any line item &mdash; a burst fitting, a corroded pipe, a
+            damaged valve &mdash; so the customer sees exactly what they're paying for,
+            right on the quote.</p>
+        </li>
+
+      </ul>
+
+      <div class="compare">
+        <p class="compare__label">Why record-then-transcribe, not live dictation</p>
+        <h3 class="compare__title">A running tap or a generator kicking in mid-sentence
+          shouldn't wreck your quote.</h3>
+        <div class="compare__grid">
+          <div class="compare__col compare__col--them">
+            <h4>LIVE-DICTATION APPS</h4>
+            <p>Streams your voice straight into a text field as you talk. Running water,
+              a generator, or a gust of wind mid-sentence garbles the line right then
+              &mdash; no retry, no reprocessing.</p>
+          </div>
+          <div class="compare__col compare__col--us">
+            <h4>QUOTEDASH AI</h4>
+            <p>Records the full clip first, then transcribes and extracts it server-side with
+              automatic retry on failure. A bad take gets reprocessed, not retyped from
+              scratch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tear tear--dark-to-paper" aria-hidden="true"></div>
+
+  <!-- ============ PRICE BOOK SHOWCASE ============ -->
+  <section class="showcase showcase--paper">
+    <div class="wrap showcase__inner">
+      <div class="showcase__copy">
+        <p class="eyebrow">PERSONAL PRICE BOOK</p>
+        <h2 class="section-title">Say it once. It remembers the rate forever.</h2>
+        <p>Set a default rate for the jobs you quote all the time &mdash; a service call, a
+          metre of copper pipe, a hot water system swap. Next time you say it, QuoteDash AI
+          recognizes the item and suggests your saved price automatically.</p>
+      </div>
+      <div class="showcase__art showcase__art--pricebook">
+        <div class="pricebook-row">
+          <div>
+            <div class="pricebook-row__desc">Standard service call</div>
+            <div class="pricebook-row__meta">CALL-OUT &middot; per visit</div>
+          </div>
+          <div class="pricebook-row__rate">$95.00</div>
+        </div>
+        <div class="pricebook-row">
+          <div>
+            <div class="pricebook-row__desc">Copper pipe, 15mm</div>
+            <div class="pricebook-row__meta">PLUMBING &middot; per metre</div>
+          </div>
+          <div class="pricebook-row__rate">$18.50</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING TEASER ============ -->
+  <section class="pricing">
+    <div class="wrap pricing__head">
+      <p class="eyebrow">SIMPLE PRICING</p>
+      <h2 class="section-title">Try it free. Then pick the plan that fits.</h2>
+      <p class="pricing__lede">10 free quotes or 14 days from your first quote, whichever
+        comes first &mdash; then Starter ($16.99/mo) or Pro ($27.99/mo, unlimited). Works in
+        USD, GBP, AUD, and more. Full plan details on the
+        <a href="index.html#pricing">pricing page</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq__head">
+      <p class="eyebrow">QUESTIONS</p>
+      <h2 class="section-title">Before you install</h2>
+    </div>
+    <div class="wrap faq__list">
+      <details class="faq__item">
+        <summary>Does this work under a house or in a basement with no signal?</summary>
+        <p>Yes, for finishing and sending. No bars under the house or in a basement? Write
+          up the job from your on-device recording by hand and send the PDF the moment
+          you're back in range &mdash; that part never needs a connection. The AI auto-fill
+          (turning your voice into priced line items) does need signal to work, but it never
+          stops you getting a quote out the door.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can I save my standard rates for copper pipe, fittings, and service calls?</summary>
+        <p>Yes &mdash; the Personal Price Book lets you set a default rate for jobs you quote
+          all the time, like a metre of copper pipe or a standard service call. Say it again
+          on a future job and QuoteDash AI recognizes the item and suggests your saved rate
+          automatically.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What if a running tap or a generator is loud while I'm recording a quote?</summary>
+        <p>QuoteDash AI records the full clip first, then transcribes and extracts it
+          server-side with automatic retry on failure &mdash; a bad take gets reprocessed, not
+          retyped from scratch. Live-dictation apps that stream your voice straight into a
+          text field garble the line the moment site noise kicks in.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can I show a customer a photo of the leak or the damaged fitting on the quote?</summary>
+        <p>Yes &mdash; attach a photo to any line item, like a burst fitting or a corroded
+          pipe, so the customer can see exactly what they're paying for, right on the
+          quote.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is there an iOS app?</summary>
+        <p>Not yet &mdash; QuoteDash AI is Android-only today. iOS is a future direction, not
+          a committed date.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta-band" id="get-app">
+    <div class="wrap cta-band__inner cta-band__inner--centered">
+      <div class="cta-band__copy">
+        <p class="eyebrow eyebrow--light">GET THE APP</p>
+        <h2>Quote the next callout before you leave the truck.</h2>
+        <p>10 free quotes, no card required. Available now on Android.</p>
+      </div>
+      <a class="play-badge play-badge--large" href="https://play.google.com/store/apps/details?id=com.quotetap.app&utm_source=landing&utm_medium=website&utm_campaign=plumbers" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+        <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+          <rect width="135" height="40" rx="6" fill="#000000"/>
+          <g transform="translate(12,8)">
+            <path d="M0 0 L0 6 L17 12 Z" fill="#29B6F6"/>
+            <path d="M0 6 L0 12 L17 12 Z" fill="#EF5350"/>
+            <path d="M0 12 L0 18 L17 12 Z" fill="#FFCA28"/>
+            <path d="M0 18 L0 24 L17 12 Z" fill="#66BB6A"/>
+          </g>
+          <text x="38" y="16" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="7.5" letter-spacing="0.8">GET IT ON</text>
+          <text x="37" y="31" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="500">Google Play</text>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__row">
+    <div>
+      <div class="wordmark wordmark--footer" aria-label="QuoteDash AI">
+        <span class="wordmark__main">QUOTEDASH</span><span class="wordmark__ai">AI</span>
+      </div>
+      <p class="site-footer__copy">The offline-capable quote maker for plumbers and trade
+        contractors.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.getElementById('site-nav');
+    var toggle = document.getElementById('nav-toggle');
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    Array.prototype.forEach.call(nav.querySelectorAll('a'), function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
+</body>
+</html>
