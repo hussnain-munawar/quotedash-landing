@@ -7,7 +7,7 @@
 <meta name="description" content="Speak the callout, get a branded electrical quote PDF — even in a basement or switch room with no signal. QuoteDash AI remembers your power point and switchboard rates. 10 free quotes, no card required.">
 <link rel="canonical" href="https://quotedashai.com/electricians.html">
 <link rel="preload" as="image" type="image/webp" href="assets/screens/home.webp">
-<link rel="preload" as="font" type="font/ttf" href="assets/fonts/BigShouldersDisplay-Variable.ttf" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/BigShouldersDisplay-Variable.woff2" crossorigin>
 
 <!-- Google tag (gtag.js), loaded after window load so it never competes with LCP-critical resources -->
 <script>
@@ -114,28 +114,32 @@
 /* ---------- Fonts (self-hosted, no runtime download) ---------- */
 @font-face {
   font-family: "Inter";
-  src: url("assets/fonts/Inter-Variable.ttf") format("truetype");
+  src: url("assets/fonts/Inter-Variable.woff2") format("woff2"),
+       url("assets/fonts/Inter-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Big Shoulders Display";
-  src: url("assets/fonts/BigShouldersDisplay-Variable.ttf") format("truetype");
+  src: url("assets/fonts/BigShouldersDisplay-Variable.woff2") format("woff2"),
+       url("assets/fonts/BigShouldersDisplay-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  src: url("assets/fonts/IBMPlexMono-Regular.woff2") format("woff2"),
+       url("assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("assets/fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  src: url("assets/fonts/IBMPlexMono-SemiBold.woff2") format("woff2"),
+       url("assets/fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -932,7 +936,7 @@ button { font: inherit; }
   color: var(--signal-green);
   flex: none;
 }
-.faq__item[open] summary::after { content: "\2212"; }
+.faq__item[open] summary::after { content: "2"; }
 .faq__item p { margin: 0 0 var(--space-lg); font-size: 0.92rem; color: color-mix(in srgb, var(--graphite) 82%, transparent); }
 
 /* ---------- Final CTA (centered variant) ---------- */
