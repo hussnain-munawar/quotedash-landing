@@ -6,15 +6,21 @@
 <title>QuoteDash AI — Voice Quote App for Electricians (Android)</title>
 <meta name="description" content="Speak the callout, get a branded electrical quote PDF — even in a basement or switch room with no signal. QuoteDash AI remembers your power point and switchboard rates. 10 free quotes, no card required.">
 <link rel="canonical" href="https://quotedashai.com/electricians.html">
+<link rel="preload" as="image" type="image/webp" href="assets/screens/home.webp">
 <link rel="preload" as="font" type="font/ttf" href="assets/fonts/BigShouldersDisplay-Variable.ttf" crossorigin>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP69P84Q9"></script>
+<!-- Google tag (gtag.js), loaded after window load so it never competes with LCP-critical resources -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YRP69P84Q9');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YRP69P84Q9';
+    document.head.appendChild(s);
+  });
 </script>
 
 <meta property="og:type" content="website">
@@ -173,7 +179,7 @@
 
       <div class="hero__visual">
         <div class="phone-frame">
-          <img src="assets/screens/home.png" width="1080" height="2280" loading="eager" alt="QuoteDash AI home screen with a Start Recording button and a list of recent quotes">
+          <img src="assets/screens/home.webp" width="600" height="1267" loading="eager" fetchpriority="high" alt="QuoteDash AI home screen with a Start Recording button and a list of recent quotes">
         </div>
       </div>
     </div>
