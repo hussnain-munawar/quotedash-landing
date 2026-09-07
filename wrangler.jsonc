@@ -1,8 +1,10 @@
 {
   "name": "quotedash-landing",
   "compatibility_date": "2026-09-07",
+  "main": "worker.js",
   "assets": {
     "directory": "./",
-    "html_handling": "none"
+    "html_handling": "none",
+    "binding": "ASSETS"
   }
 }
