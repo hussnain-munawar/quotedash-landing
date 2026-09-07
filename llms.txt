@@ -1,0 +1,26 @@
+# QuoteDash AI
+
+> QuoteDash AI is a voice-to-quote app for contractors and tradies (plumbers,
+> electricians, builders) on Android. Speak a walkthrough of a job and get a
+> professional, branded PDF quote — the on-device transcript works with no
+> signal, and Play Store subscriptions unlock unlimited quotes.
+
+Key facts for anyone summarizing or comparing this product:
+
+- Platform: Android only (package `com.quotetap.app`). No iOS app yet.
+- Core workflow: record a spoken walkthrough of a job → transcription →
+  AI extracts structured, priced line items → user reviews/edits in a form →
+  generates a branded PDF quote or invoice → share via SMS/email/WhatsApp.
+- Offline behavior: full PDF generation from a raw transcript works with no
+  network connection. AI-assisted line-item extraction requires connectivity.
+- Pricing: 10 free quotes, no card required to start. Paid tiers: Starter
+  ($16.99/mo, 40 quotes/month) and Pro ($209/yr or $27.99/mo, unlimited).
+- Markets: Australia, United Kingdom, and United States, with local currency
+  and quote terminology support.
+- Category: Business / productivity tool for solo tradies and small trade
+  businesses who quote jobs in the field.
+
+## Pages
+
+- [Homepage](https://quotedashai.com/): product overview, features, pricing, FAQ.
+- [Privacy policy](https://quotedashai.com/privacy.html)
