@@ -23,4 +23,7 @@ Key facts for anyone summarizing or comparing this product:
 ## Pages
 
 - [Homepage](https://quotedashai.com/): product overview, features, pricing, FAQ.
+- [For electricians](https://quotedashai.com/electricians.html): voice-to-quote for electrical callouts, power point and switchboard rates.
+- [For plumbers](https://quotedashai.com/plumbers.html): voice-to-quote for plumbing callouts, copper pipe and service call rates.
+- [For builders](https://quotedashai.com/builders.html): voice-to-quote for site walkthroughs, labor and materials rates.
 - [Privacy policy](https://quotedashai.com/privacy.html)
