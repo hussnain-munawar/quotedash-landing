@@ -142,33 +142,42 @@
         document.querySelector('p').textContent = 'The email confirmation link could not be processed. Please try again from the app or request a new confirmation email.';
       }
 
-      const appScheme = 'com.quotetap.app://login-callback';
-      const appLink = new URL(appScheme);
-      const extras = new URLSearchParams();
+      // Only mobile has a handler registered for this custom scheme
+      // (AndroidManifest.xml's login-callback intent-filter). On desktop,
+      // navigating to it leaves the tab blank with no fallback UI, so the
+      // app-reopen attempt is mobile-only; desktop just shows the static
+      // confirmation above.
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-      for (const [key, value] of params.entries()) {
-        if (value && key !== 'redirect_to' && key !== 'type') {
-          extras.append(key, value);
-        }
-      }
-      for (const [key, value] of hash.entries()) {
-        if (value && key !== 'redirect_to' && key !== 'type') {
-          extras.append(key, value);
-        }
-      }
+      if (isMobile) {
+        const appScheme = 'com.quotetap.app://login-callback';
+        const appLink = new URL(appScheme);
+        const extras = new URLSearchParams();
 
-      if (extras.toString()) {
-        appLink.search = extras.toString();
-      }
-
-      window.setTimeout(() => {
-        statusEl.classList.add('visible');
-        try {
-          window.location.href = appLink.toString();
-        } catch (error) {
-          console.error('Could not reopen app deep link', error);
+        for (const [key, value] of params.entries()) {
+          if (value && key !== 'redirect_to' && key !== 'type') {
+            extras.append(key, value);
+          }
         }
-      }, 800);
+        for (const [key, value] of hash.entries()) {
+          if (value && key !== 'redirect_to' && key !== 'type') {
+            extras.append(key, value);
+          }
+        }
+
+        if (extras.toString()) {
+          appLink.search = extras.toString();
+        }
+
+        window.setTimeout(() => {
+          statusEl.classList.add('visible');
+          try {
+            window.location.href = appLink.toString();
+          } catch (error) {
+            console.error('Could not reopen app deep link', error);
+          }
+        }, 800);
+      }
 
       if (!token && !isError) {
         statusEl.textContent = 'This page was opened after a confirmation request. You can safely close it.';
