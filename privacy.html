@@ -902,9 +902,29 @@ button { font: inherit; }
         notes, line items, prices and totals. The client details are about your customers, not
         about you. Please make sure you are entitled to store them.</p>
 
-      <h2>Voice recordings</h2>
-      <p>When you dictate a quote, the recording is sent to third-party speech-to-text and AI
-        services to turn it into a draft. Our servers do not save the recording.</p>
+      <h2>Voice recordings and AI processing</h2>
+      <p>When you dictate a quote, the recording is sent to a speech-to-text provider
+        (Deepgram or Groq) to turn it into text. That text, which can include your clients'
+        names and addresses if you say them, is then sent to an AI provider to turn it into
+        a draft quote: Google (Gemini) and, if Google's service is unavailable, OpenAI.
+        Our servers do not save the recording.</p>
+      <p><strong>Google's free service.</strong> We currently use Google's Gemini API under
+        Google's free (unpaid) terms. Under those terms Google may use the text we send, and
+        the draft that comes back, to improve its products, and human reviewers may read it
+        after it has been disconnected from your account. Please do not dictate information
+        you want to keep confidential. We plan to move to Google's paid terms, under which
+        Google does not use this content to improve its products, before we have users outside
+        testing, and we will update this policy when we do.</p>
+
+      <h2>Who processes your data for us</h2>
+      <ul>
+        <li>Supabase: stores your account and your quotes and invoices</li>
+        <li>Railway: runs our servers</li>
+        <li>Deepgram or Groq: speech-to-text for voice dictation</li>
+        <li>Google (Gemini) and OpenAI: turning dictated text into a draft quote</li>
+        <li>Sentry: error reports from our servers</li>
+        <li>Google Firebase Cloud Messaging: delivering push notifications to your phone</li>
+      </ul>
 
       <h2>Account information</h2>
       <ul>
@@ -913,7 +933,10 @@ button { font: inherit; }
       </ul>
 
       <h2>Deleting your data</h2>
-      <p>You can delete a quote in the app, which deletes it from our servers.</p>
+      <p>You can delete a quote in the app, which deletes it from our servers. You can also
+        delete your account in the app, which deletes your account and your quotes, invoices
+        and saved prices from our servers. The recording is never saved, so there is nothing
+        to delete. Copies held by the providers above are covered by their own policies.</p>
 
       <h2>What we don't do</h2>
       <ul>
